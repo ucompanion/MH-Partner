@@ -1,0 +1,43 @@
+@charset 'utf-8';
+/*-------------------------------------------------------------------
+	분류그룹 : 레이아웃
+	속성순서 : 레이아웃, 크기간격, 박스모양, 글자모양, 문단모양, 기타모양
+-------------------------------------------------------------------*/
+
+/* Default */
+body,
+html {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+}
+
+.wrapper,
+.container,
+.content,
+.content-body {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	flex-basis: auto;
+}
+
+.header,
+.footer,
+.content-header,
+.content-footer {
+	width: 100%;
+	flex: none;
+}
+
+/* Common */
+.inner {
+	width: 100%;
+	max-width: 1260px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -1,0 +1,288 @@
+@charset 'utf-8';
+/*-------------------------------------------------------------------
+	분류그룹 : 초기화
+	속성순서 : 레이아웃, 크기간격, 박스모양, 글자모양, 문단모양, 기타모양
+-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------
+	@@ Fonts
+-------------------------------------------------------------------*/
+/* Pretendard Variable */
+@import url('../fonts/PretendardVariable/fonts.css');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css");
+
+/* NotoSans */
+@import url('../fonts/NotoSans/fonts.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+/*-------------------------------------------------------------------
+	@@ Resets
+-------------------------------------------------------------------*/
+html,
+body,
+div,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+thead,
+tbody,
+tr,
+th,
+td,
+caption,
+address,
+article,
+aside,
+canvas,
+details,
+figure,
+figcaption,
+main,
+footer,
+header,
+menu,
+nav,
+section,
+form,
+fieldset,
+legend,
+button,
+select,
+textarea,
+input,
+label,
+a,
+span,
+strong,
+em,
+address,
+dfn,
+small,
+i,
+b {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+	font-style: normal;
+	font-size: inherit;
+	font-weight: inherit;
+	font-family: inherit;
+	color: inherit;
+	box-sizing: inherit;
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	-o-box-sizing: inherit;
+	-webkit-print-color-adjust: exact;
+	color-adjust: exact !important;
+}
+
+:before,
+:after {
+	box-sizing: inherit;
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	-o-box-sizing: inherit;
+}
+
+main,
+article,
+aside,
+canvas,
+details,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	font-family: $font-primary, 'sans-serif';
+	font-size: 14px;
+	line-height: 22px;
+	word-break: break-all;
+	word-wrap: break-word;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+}
+
+html[lang=ja] body,
+html[lang=zh] body {
+	word-break: normal;
+}
+
+[hidden],
+hr {
+	display: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+button {
+	background-color: transparent;
+	cursor: pointer;
+}
+
+fieldset,
+iframe {
+	width: 100%;
+}
+
+img,
+a,
+frame,
+iframe,
+fieldset {
+	border: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+table {
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+caption {
+	height: 1px;
+	overflow: hidden;
+}
+
+legend {
+	position: fixed;
+	overflow: hidden;
+	border: 0;
+	margin: -1px;
+	width: 1px;
+	height: 1px;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+}
+
+button {
+	overflow: hidden;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	border: 0px;
+	padding: 0px;
+}
+
+input[type='checkbox'],
+input[type='radio'],
+select {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+}
+
+textarea {
+	resize: none;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+input::-ms-clear,
+input::-ms-reveal {
+	display: none;
+	width: 0;
+	height: 0;
+}
+
+input::search-decoration,
+input::search-cancel-button,
+input::search-results-button,
+input::search-results-decoration {
+	display: none;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+	display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input::-webkit-calendar-picker-indicator {
+	-webkit-appearance: none;
+}
+
+/*-------------------------------------------------------------------
+	@@ Generals
+-------------------------------------------------------------------*/
+/* Device Focus */
+.os-android [tabindex='0']:focus,
+.os-android a:focus,
+.os-android button:focus,
+.os-android input:focus,
+.os-android textarea:focus,
+.os-android select:focus {
+	outline: 0;
+}
+
+.os-ios [tabindex='0'],
+.os-ios a,
+.os-ios button,
+.os-ios input,
+.os-ios textarea,
+.os-ios select {
+	-webkit-tap-highlight-color: transparent;
+}
+
+/* IR */
+.blind {
+	position: fixed;
+	overflow: hidden;
+	border: 0;
+	margin: -1px;
+	width: 1px;
+	height: 1px;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+}
+
+/* Bootstrap Transition */
+.fade {
+	transition: opacity .15s linear;
+
+	&:not(.show) {
+		opacity: 0;
+	}
+}

@@ -1,0 +1,70 @@
+@charset "utf-8";
+/*-------------------------------------------------------------------
+	분류그룹 : 팝업
+	속성순서 : 레이아웃, 크기간격, 박스모양, 글자모양, 문단모양, 기타모양
+-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------
+	@@ 공통
+-------------------------------------------------------------------*/
+/* 기본 */
+/* 모달 */
+.modal {
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1100;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+
+	.modal-dialog {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		transition: transform .3s ease-out;
+		transform: translate(0, 50px);
+		pointer-events: none;
+	}
+	// 인터렉션
+	&.show .modal-dialog {
+		transform: none;
+	}
+	&.modal-static .modal-dialog {
+		transform: scale(1.02);
+	}
+}
+.modal-content {
+	pointer-events: auto;
+	transition: all 0.2s ease;
+}
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+	opacity: 0;
+	&.show {
+		opacity: 0.5;
+	}
+	& + .modal-backdrop {
+		z-index: 2000;
+	}
+}
+
+/* 강조 */
+
+/*-------------------------------------------------------------------
+	@@ 유형
+-------------------------------------------------------------------*/
+/* 스타일1 */
+
+
+/* 스타일2 */
