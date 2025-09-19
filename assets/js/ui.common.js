@@ -119,6 +119,23 @@ function setScrollStatus() {
 /*-------------------------------------------------------------------
 	Components
 -------------------------------------------------------------------*/
+// Popover
+function setPopover(selector){
+	// Boottsrap Popover
+	const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+	const popoverList = [...popoverTriggerList].map(popoverTriggerEl => {
+		const container = popoverTriggerEl.closest('.modal-body') ? popoverTriggerEl.closest('.modal-body') : 'body'; // 2025-02-03 조찬기 : 클릭한 요소의 부모 선택자 적용
+		return new bootstrap.Popover(popoverTriggerEl, {
+			customClass: selector,
+			container: container
+		});
+	});
+
+	// 문서 클릭 시 모든 Popover 닫기
+	document.addEventListener('click', () => {
+		popoverList.forEach(popover => popover.hide());
+	});
+}
 
 /*-------------------------------------------------------------------
 	Contents

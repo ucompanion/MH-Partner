@@ -19,8 +19,8 @@
 				<small class="g-explain-h1">Publishing Conventions</small>
 			</div>
 			<div class="g-content-body">
-				<!-- section1 -->
-				<section id="section1" class="g-section">
+				<!-- section -->
+				<section class="g-section">
 					<div class="g-section-header">
 						<h2 class="g-h2">프로젝트 환경</h2>
 					</div>
@@ -45,7 +45,7 @@
 									<tr>
 										<th scope="row" class="align-l">호환성 브라우저</th>
 										<td>
-											- 크롬, 파이어폭스, 사파리, 엣지, 삼성브라우저
+											- 크롬, 사파리, 엣지
 										</td>
 									</tr>
 									<tr>
@@ -64,10 +64,45 @@
 						</div>
 					</div>
 				</section>
-				<!-- // Section1 -->
-
-				<!-- section2 -->
-				<section id="section2" class="g-section">
+				<!-- // Section -->
+				<!-- section -->
+				<section class="g-section">
+					<div class="g-section-header">
+						<h2 class="g-h2">퍼블리싱 설정</h2>
+					</div>
+					<div class="g-section-body">
+						<h2 class="g-h2">settings.json</h2>
+						<div class="g-code">
+							<pre class="brush:js">
+{
+    "editor.tabSize": 4,
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "~/../css/"
+        }
+    ],
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        "**/guide/**",
+    ],
+    "editor.detectIndentation": false,
+    "editor.trimAutoWhitespace": true,
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": false,
+    "editor.renderWhitespace": "all",
+	"editor.hover.enabled": false
+}
+							</pre>
+						</div>
+					</div>
+				</section>
+				<!-- // Section -->
+				<!-- section -->
+				<section class="g-section">
 					<div class="g-section-header">
 						<h2 class="g-h2">파일/폴더 규칙</h2>
 					</div>

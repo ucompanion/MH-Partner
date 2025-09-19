@@ -9,7 +9,7 @@ var ia = {
 	},
 	include : function(){
 		var html_header = ''
-        +'<h1 class="g-logo">INDEX</h1>'
+        +'<h1 class="g-logo">Medihim Partner Index</h1>'
         +'<nav class="g-gnb">'
         +'    <ul>'
         +'        <li><a href="guide.html">가이드</a></li>'

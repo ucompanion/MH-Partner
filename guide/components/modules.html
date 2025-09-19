@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Modules | Medihim Partners</title>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge chrome=1" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="keywords" content="프로젝트가이드, Medihim Partners" />
+	<meta name="description" content="프로젝트가이드, Medihim Partners" />
+	<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../assets/css/ui.style.css" />
+	<script src="../../assets/js/jquery.min.js"></script>
+	<script src="../../assets/js/ui.libs.min.js"></script>
+	<script src="../../assets/js/ui.common.js"></script>
+	<script src="../../assets/js/ui.publish.js"></script><!-- 퍼블리싱 작업용 환경설정(개발적용안함) -->
+</head>
+
+<body>
+	<!-- page -->
+	<div class="page template-a">
+		<header class="page-header"></header>
+
+		<!-- page-body -->
+		<main class="page-body templete-a">
+			<!-- page-content -->
+			<div id="pageContent" class="page-content">
+				<!-- Tabs -->
+				<section class="section module-guide">
+					<div class="section-header">
+						<h2 class="section-h2">Tabs</h2>
+					</div>
+					<div class="section-body">
+						<h3 class="content-h3">demo-a</h3>
+						<ul class="tab demo-a" id="myTab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link active" id="tab-11" data-bs-toggle="tab" data-bs-target="#tab-11-pane" type="button" role="tab" aria-controls="tab-11-pane" aria-selected="true">Home Tab</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="tab-12" data-bs-toggle="tab" data-bs-target="#tab-12-pane" type="button" role="tab" aria-controls="tab-12-pane" aria-selected="false">Profile Tab</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="tab-13" data-bs-toggle="tab" data-bs-target="#tab-13-pane" type="button" role="tab" aria-controls="tab-13-pane" aria-selected="false">Contact Tab</button>
+							</li>
+						</ul>
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade show active" id="tab-11-pane" role="tabpanel" aria-labelledby="tab-11" tabindex="0">
+									Home Tabpanel
+							</div>
+							<div class="tab-pane fade" id="tab-12-pane" role="tabpanel" aria-labelledby="tab-12" tabindex="0">
+								Profile Tabpanel
+							</div>
+							<div class="tab-pane fade" id="tab-13-pane" role="tabpanel" aria-labelledby="tab-13" tabindex="0">
+								Contact Tabpanel
+							</div>
+						</div>
+
+						<h3 class="content-h3">demo-b</h3>
+						<ul class="tab demo-b" id="myTab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link active" id="tab-21" data-bs-toggle="tab" data-bs-target="#tab-21-pane" type="button" role="tab" aria-controls="tab-21-pane" aria-selected="true">Home Tab</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="tab-22" data-bs-toggle="tab" data-bs-target="#tab-22-pane" type="button" role="tab" aria-controls="tab-22-pane" aria-selected="false">Profile Tab</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="tab-23" data-bs-toggle="tab" data-bs-target="#tab-23-pane" type="button" role="tab" aria-controls="tab-23-pane" aria-selected="false">Contact Tab</button>
+							</li>
+						</ul>
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade show active" id="tab-21-pane" role="tabpanel" aria-labelledby="tab-21" tabindex="0">
+									Home Tabpanel
+							</div>
+							<div class="tab-pane fade" id="tab-22-pane" role="tabpanel" aria-labelledby="tab-22" tabindex="0">
+								Profile Tabpanel
+							</div>
+							<div class="tab-pane fade" id="tab-23-pane" role="tabpanel" aria-labelledby="tab-23" tabindex="0">
+								Contact Tabpanel
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- // Tabs -->
+				<!-- Accordions -->
+				<section class="section module-guide">
+					<div class="section-header">
+						<h2 class="section-h2">Accordions</h2>
+					</div>
+					<div class="section-body">
+						<div class="accordion" id="accordionExample">
+							<div class="accordion-item">
+								<h3 class="accordion-header">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+										aria-expanded="true" aria-controls="collapseOne">
+										Accordion Item #1
+									</button>
+								</h3>
+								<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										Accordion Panel #1
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h3 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										Accordion Item #2
+									</button>
+								</h3>
+								<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										Accordion Panel #2
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h3 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										Accordion Item #3
+									</button>
+								</h3>
+								<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										Accordion Panel #3
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- // Accordions -->
+				<!-- Popover -->
+				<section class="section module-guide">
+					<div class="section-header">
+						<h2 class="section-h2">Popover</h2>
+					</div>
+					<div class="section-body">
+						<button type="button" class="btn" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="auto"
+							data-bs-content="텍스트와 용량이 작은 이미지 페이지 까지 확인할 수 있어요. 유튜브 480p로 재생돼요.">
+							<span>툴팁</span>
+						</button>
+					</div>
+				</section>
+				<!-- // Popover -->
+				<!-- Modals -->
+				<section class="section module-guide">
+					<div class="section-header">
+						<h2 class="section-h2">Modals</h2>
+					</div>
+					<div class="section-body">
+						<div class="flex-w gap-10">
+							<button type="button" class="btn demo-a fill-primary" data-bs-toggle="modal" data-bs-target="#ModalDefault">
+								Default Modal
+							</button>
+							<button type="button" class="btn demo-a fill-primary" data-bs-toggle="modal" data-bs-target="#ModalAlert">
+								Alert Modal
+							</button>
+							<button type="button" class="btn demo-a fill-primary" data-bs-toggle="modal" data-bs-target="#ModalConfirm">
+								Confirm Modal
+							</button>
+							<button type="button" class="btn demo-a fill-primary" data-bs-toggle="modal" data-bs-target="#ModalSelect">
+								Select Modal
+							</button>
+							<button type="button" class="btn demo-a fill-primary" data-bs-toggle="modal" data-bs-target="#ModalFull">
+								Full Modal
+							</button>
+							<button type="button" class="btn demo-a fill-primary" data-bs-toggle="modal" data-bs-target="#ModalBasic">
+								Basic Modal
+							</button>
+							<button type="button" class="btn demo-a fill-primary" data-bs-toggle="modal" data-bs-target="#customModal">
+								Custom Modal
+							</button>
+						</div>
+					</div>
+				</section>
+				<!-- // Modals -->
+			</div>
+		</main>
+		<!-- // Container -->
+
+		<!-- Footer -->
+		<footer class="page-footer"></footer>
+		<!-- // Footer -->
+	</div>
+	<!-- // page -->
+
+	<!-- Modal Default -->
+	<div class="modal fade" id="ModalDefault" tabindex="-1" role="dialog" aria-labelledby="ModalDefaultLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content modal-컨텐츠">
+				<div class="modal-header">
+					<h3 class="modal-title" id="ModalDefaultLabel"></h3>
+					<button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close">닫기</button>
+				</div>
+				<div class="modal-body"></div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
+	</div>
+	<!-- // Modal Default -->
+
+	<!-- Modal Alert -->
+	<div class="modal modal-alert fade" id="ModalAlert" tabindex="-1" role="alertdialog" data-bs-backdrop="static" aria-labelledby="ModalAlertLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title blind" id="ModalAlertLabel">Alert Message</h3>
+				</div>
+				<div class="modal-body">
+					<section class="msg-sec">
+						<h4 class="sec-tit">Alert 제목 텍스트가 들어가는 영역입니다.</h4>
+						<p class="sec-txt"><span class="txt-primary">Alert 설명 텍스트</span>가 들어가는 영역입니다.</p>
+					</section>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-modal primary" data-bs-dismiss="modal">
+						<span>Save</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // Modal Alert -->
+
+	<!-- Modal Confirm -->
+	<div class="modal modal-confirm fade" id="ModalConfirm" tabindex="-1" role="alertdialog" data-bs-backdrop="static" aria-labelledby="ModalConfirmLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title blind" id="ModalConfirmLabel">Confirm Message</h1>
+				</div>
+				<div class="modal-body">
+					<section class="msg-sec">
+						<h4 class="sec-tit">Confirm 제목 텍스트가 들어가는 영역입니다.</h4>
+						<p class="sec-txt"><span class="txt-primary">Confirm 설명 텍스트</span>가 들어가는 영역입니다.</p>
+					</section>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-modal normal" data-bs-dismiss="modal">
+						<span>Cancel</span>
+					</button>
+					<button type="button" class="btn btn-modal primary" data-bs-dismiss="modal">
+						<span>Save</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // Modal Confirm -->
+
+	<!-- Modal Select -->
+	<div class="modal modal-select fade" id="ModalSelect" tabindex="-1" role="dialog" aria-labelledby="ModalSelectLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title" id="ModalSelectLabel">문의유형 선택</h3>
+					<!-- 닫기버튼은 CSS로 숨기고 필요시 활성화 예정 -->
+					<button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<i class="ui-icn icn-32-close-bk" aria-label="닫기"></i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<!-- 콤보박스 섹션 -->
+					<section class="select-sec">
+						<div class="sec-inner">
+							<!-- modal-select 공통 -->
+							<ul class="select-listbox" role="listbox">
+								<!-- setSelectValued 는 퍼블 확인용입니다. -->
+								<!-- 이미 선택목록이 있는 경우 class="is-selected" 추가 -->
+								<li role="option" tabindex="0" data-bs-dismiss="modal" onclick="setSelectValued('#frmType', this)">문의유형 1</li>
+								<li role="option" tabindex="0" data-bs-dismiss="modal" onclick="setSelectValued('#frmType', this)">문의유형 2</li>
+								<li role="option" tabindex="0" data-bs-dismiss="modal" onclick="setSelectValued('#frmType', this)">문의유형 3</li>
+								<li role="option" tabindex="0" data-bs-dismiss="modal" onclick="setSelectValued('#frmType', this)">문의유형 4</li>
+							</ul>
+						</div>
+					</section>
+					<!-- // 콤보박스 섹션 -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // Modal Select -->
+
+	<!-- Modal Full -->
+	<div class="modal modal-full" id="ModalFull" tabindex="-1" role="dialog" aria-labelledby="ModalFullLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title" id="ModalFullLabel">Modal title</h1>
+					<button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<i class="ui-icn icn-32-close-bk" aria-label="닫기"></i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div>
+						<p style="height:600px; background-color: #eee;">Modal Body (스크롤 확인)</p>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn demo-a fill-primary" data-bs-dismiss="modal">Button</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // Modal Full -->
+
+	<!-- Modal Basic -->
+	<div class="modal modal-basic fade" id="ModalBasic" tabindex="-1" role="dialog" aria-labelledby="ModalBasicLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title" id="ModalBasicLabel">Modal title</h1>
+					<button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<i class="ui-icn icn-32-close-bk" aria-label="닫기"></i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div>
+						<p style="height:600px; background-color: #eee;">Modal Body (스크롤 확인)</p>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn demo-a fill-primary" data-bs-dismiss="modal">Button</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // Modal Basic -->
+
+	<!-- Modal Custom -->
+	<div class="modal modal-이름 fade" id="ModalCustom" tabindex="-1" role="dialog" aria-labelledby="ModalBasicLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title" id="ModalBasicLabel">Modal title</h1>
+					<button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<i class="ui-icn icn-32-close-bk" aria-label="닫기"></i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div>
+						<p style="height:600px; background-color: #eee;">Modal Body (스크롤 확인)</p>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn demo-a fill-primary" data-bs-dismiss="modal">Button</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // Modal Basic -->
+
+	<script>
+		setPopover('popover demo-a');
+	</script>
+</body>
+
+</html>

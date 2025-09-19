@@ -1,0 +1,22 @@
+{
+    "editor.tabSize": 4,
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "~/../css/"
+        }
+    ],
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        "**/guide/**",
+    ],
+    "editor.detectIndentation": false,
+    "editor.trimAutoWhitespace": true,
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": false,
+    "editor.renderWhitespace": "all",
+	"editor.hover.enabled": false
+}

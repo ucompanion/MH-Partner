@@ -1,0 +1,245 @@
+@charset 'utf-8';
+// ------------------------------------------------------------------
+//	Variables
+// ------------------------------------------------------------------
+:root {
+	// 기본설정
+	--html-font-size: 1px;
+	--body-font-family: 'Pretendard Variable', 'sans-serif';
+	--body-font-size: 14rem;
+	--body-line-height: 1.5;
+
+	// 레이아웃 프임임
+	--header-height: 60rem;
+	--padding-sidespacer: 20rem;
+
+	// 컬러 강조
+	--color-primary: blue;
+	--color-secondary: orange;
+	--color-point1: pink;
+
+	// 컬러 상태
+	--color-nagative: red;
+	--color-positive: green;
+	--color-completed: rgb(0, 88, 219);
+
+	// 컬러 아이
+	--color-item1: navy;
+	--color-item2: darkred;
+	--color-item3: darkgreen;
+}
+
+$safe-area-bottom: (env(safe-area-inset-bottom, 0)/1.7);
+
+//-------------------------------------------------------------------
+//    Mixins
+//-------------------------------------------------------------------
+// 레이아웃 시스템
+@mixin inner {
+	width: calc(100% - (#{var(--padding-sidespacer)} * 2));
+	margin-left: auto;
+	margin-right: auto;
+}
+@mixin outer {
+	padding-left: var(--padding-sidespacer);
+	padding-right: var(--padding-sidespacer);
+}
+@mixin modal-spacer {
+	padding-left: var(--padding-sidespacer);
+	padding-right: var(--padding-sidespacer);
+}
+
+// Set Fonts
+@mixin font-set($font-weight, $font-size, $color) {
+	$line-height: $font-size * 1.5;
+	$rounded: ceil($line-height);
+
+	@if ($rounded % 2 != 0) {
+	  $rounded: $rounded + 1;
+	}
+
+	font-size: $font-size + rem;
+	font-weight: $font-weight;
+	line-height: $rounded + rem;
+	color: $color;
+}
+
+// Set Split
+@mixin split-set($width, $height, $color, $margin){
+	display: block;
+	width: $width;
+	height: $height;
+	background-color: $color;
+	margin-left: $margin;
+	margin-right: $margin;
+}
+
+@mixin bg-default {
+	background: no-repeat center center / contain;
+}
+
+@mixin mask-default {
+	mask: no-repeat center center / contain;
+}
+
+// Utilities
+@mixin ellipsis1 {
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+@mixin ellipsis2 {
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+@mixin ellipsis3 {
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+// UI Options (Button, Label)
+@mixin element-options {
+	&.fill-normal {
+		background-color: var(--color-normal);
+		border-color: var(--color-normal);
+		color: #fff;
+	}
+
+	&.fill-primary {
+		background-color: var(--color-primary);
+		border-color: var(--color-primary);
+		color: #fff;
+	}
+
+	&.fill-secondary {
+		background-color: var(--color-secondary);
+		border-color: var(--color-secondary);
+		color: #fff;
+	}
+
+	&.fill-dark {
+		background-color: var(--color-dark);
+		border-color: var(--color-dark);
+		color: #fff;
+	}
+
+	&.fill-item1 {
+		background-color: var(--color-item1);
+		border-color: var(--color-item1);
+		color: #fff;
+	}
+
+	&.fill-item2 {
+		background-color: var(--color-item2);
+		border-color: var(--color-item2);
+		color: #fff;
+	}
+
+	&.fill-item3 {
+		background-color: var(--color-item3);
+		border-color: var(--color-item3);
+		color: #fff;
+	}
+
+	&.line-normal {
+		background-color: #fff;
+		border-color: var(--color-normal);
+		color: var(--color-normal);
+	}
+
+	&.line-primary {
+		background-color: #fff;
+		border-color: var(--color-primary);
+		color: var(--color-primary);
+	}
+
+	&.line-secondary {
+		background-color: #fff;
+		border-color: var(--color-secondary);
+		color: var(--color-secondary);
+	}
+
+	&.line-dark {
+		background-color: #fff;
+		border-color: var(--color-dark);
+		color: var(--color-dark);
+	}
+
+	&.line-item1 {
+		background-color: #fff;
+		border-color: var(--color-item1);
+		color: var(--color-item1);
+	}
+
+	&.line-item2 {
+		background-color: #fff;
+		border-color: var(--color-item2);
+		color: var(--color-item2);
+	}
+
+	&.line-item3 {
+		background-color: #fff;
+		border-color: var(--color-item3);
+		color: var(--color-item3);
+	}
+
+	&.none-normal {
+		padding: 0;
+		background-color: transparent;
+		border-color: transparent;
+		color: var(--color-normal);
+	}
+
+	&.none-primary {
+		padding: 0;
+		background-color: transparent;
+		border-color: transparent;
+		color: var(--color-primary);
+	}
+
+	&.none-secondary {
+		padding: 0;
+		background-color: transparent;
+		border-color: transparent;
+		color: var(--color-secondary);
+	}
+
+	&.none-dark {
+		padding: 0;
+		background-color: transparent;
+		border-color: transparent;
+		color: var(--color-dark);
+	}
+
+	&.none-item1 {
+		padding: 0;
+		background-color: transparent;
+		border-color: transparent;
+		color: var(--color-item3);
+	}
+
+	&.none-item2 {
+		padding: 0;
+		background-color: transparent;
+		border-color: transparent;
+		color: var(--color-item2);
+	}
+
+	&.none-item2 {
+		padding: 0;
+		background-color: transparent;
+		border-color: transparent;
+		color: var(--color-item3);
+	}
+}
