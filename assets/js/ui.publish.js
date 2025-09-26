@@ -10,6 +10,11 @@ $(function () {
 			console.log('[INFO] 퍼블리싱 include_header.html 인클루드 완료');
 		});
 	});
+	$(".page-aside").each(function () {
+		$(this).load("../../html/templates/include_aside.html", function () {
+			console.log('[INFO] 퍼블리싱 include_aside.html 인클루드 완료');
+		});
+	});
 	$(".page-footer").each(function () {
 		$(this).load("../../html/templates/include_footer.html", function () {
 			console.log('[INFO] 퍼블리싱 include_footer.html 인클루드 완료');
