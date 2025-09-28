@@ -85,6 +85,7 @@
 	th,
 	td {
 		height: 55rem;
+		border-bottom: 1px solid #D7DCEA;
 		@include font-set(600, 14, #575757);
 		text-align: center;
 	}

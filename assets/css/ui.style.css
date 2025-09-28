@@ -1837,6 +1837,7 @@ html, body {
 .list-tbl th,
 .list-tbl td {
   height: 55rem;
+  border-bottom: 1px solid #D7DCEA;
   font-size: 14rem;
   font-weight: 600;
   line-height: 22rem;
