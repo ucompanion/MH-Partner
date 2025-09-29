@@ -4,11 +4,92 @@
 	속성순서 : 레이아웃, 크기간격, 박스모양, 글자모양, 문단모양, 기타모양
 -------------------------------------------------------------------*/
 /*-------------------------------------------------------------------
-	@@ 분류
+	@@ Search Section
 -------------------------------------------------------------------*/
-/* 섹션명 */
+// Section
+.srch-sec {
+
+}
+
+// Table
+.srch-tbl {
+	table {
+		width: auto;
+		max-width: 100%;
+		th, td {
+			text-align: left;
+			padding: 7rem 28rem 7rem 0;
+		}
+		th {
+			@include font-set(600, 14, #6D6D6D);
+		}
+		td {
+			@include font-set(400, 14, #575757);
+		}
+	}
+}
+
+// Actions
+.srch-btns {
+	display: flex;
+	justify-content: center;
+	gap: 20rem;
+	margin-top: 20rem;
+}
 
 /*-------------------------------------------------------------------
-	@@ 팝업명
+	@@ List Section
 -------------------------------------------------------------------*/
-/* 섹션명 > 버튼명 > 팝업명 */
+// Section
+.list-sec {
+
+}
+
+// Toolbar
+.list-toolbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 12rem;
+	.left-area {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		margin-right: auto;
+	}
+	.right-area {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		margin-left: auto;
+	}
+
+	.frm-input.module-a {
+		--frm-height: 30rem;
+		.select {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+
+	.total {
+		@include font-set(600, 14, #6D6D6D);
+		.count {
+			color: var(--color-primary-blue);
+		}
+	}
+}
+
+// Table
+.list-tbl {
+	th,
+	td {
+		height: 55rem;
+		border-bottom: 1px solid #D7DCEA;
+		@include font-set(600, 14, #575757);
+		text-align: center;
+	}
+	th {
+		background-color: var(--color-primary-white);
+	}
+}

@@ -8,13 +8,12 @@
 	--body-font-family: 'Pretendard Variable', 'sans-serif';
 	--body-font-size: 14rem;
 	--body-line-height: 1.5;
-
-	// 레이아웃 프임임
-	--header-height: 60rem;
-	--padding-sidespacer: 20rem;
+	--padding-sidespacer: 32rem;
 
 	// 컬러 강조
-	--color-primary: blue;
+	--color-primary: #172EFA;
+	--color-primary-blue: #266EFC;
+	--color-primary-white: #F5F7FD;
 	--color-secondary: orange;
 	--color-point1: pink;
 
@@ -36,9 +35,8 @@ $safe-area-bottom: (env(safe-area-inset-bottom, 0)/1.7);
 //-------------------------------------------------------------------
 // 레이아웃 시스템
 @mixin inner {
-	width: calc(100% - (#{var(--padding-sidespacer)} * 2));
-	margin-left: auto;
-	margin-right: auto;
+	width: 100%;
+	max-width: 1400rem;
 }
 @mixin outer {
 	padding-left: var(--padding-sidespacer);
@@ -111,9 +109,8 @@ $safe-area-bottom: (env(safe-area-inset-bottom, 0)/1.7);
 // UI Options (Button, Label)
 @mixin element-options {
 	&.fill-normal {
-		background-color: var(--color-normal);
-		border-color: var(--color-normal);
-		color: #fff;
+		background-color: #EDEDED;
+		border-color: #EDEDED;
 	}
 
 	&.fill-primary {
@@ -150,12 +147,6 @@ $safe-area-bottom: (env(safe-area-inset-bottom, 0)/1.7);
 		background-color: var(--color-item3);
 		border-color: var(--color-item3);
 		color: #fff;
-	}
-
-	&.line-normal {
-		background-color: #fff;
-		border-color: var(--color-normal);
-		color: var(--color-normal);
 	}
 
 	&.line-primary {

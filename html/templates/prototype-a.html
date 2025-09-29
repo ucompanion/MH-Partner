@@ -5,10 +5,10 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="format-detection" content="telephone=no" />
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 	<meta name="keywords" content="UCOMPANION">
 	<meta name="description" content="UCOMPANION">
-	<title>Pages | UCOMPANION</title>
+	<title>Prototype | ippeo</title>
 	<link rel="stylesheet" type="text/css" href="../../assets/css/ui.style.css" />
 	<script src="../../assets/js/jquery.min.js"></script>
 	<script src="../../assets/js/ui.libs.min.js"></script>
@@ -23,19 +23,130 @@
 
 		<!-- page-body -->
 		<main class="page-body templete-a">
+			<!-- page-aside -->
+			<aside class="page-aside"></aside>
+			<!-- //page-aside -->
+
 			<!-- page-content -->
-			<div id="pageContent" class="page-content [화면명]-wrap">
+			<div id="pageContent" class="page-content">
+				<div class="page-title">
+					<div class="location">
+						<span class="dep1">템플릿</span>
+						<span class="dep2">Prototype</span>
+					</div>
+					<h1 class="title">Prototype</h1>
+				</div>
+
 				<!-- 섹션 모듈 -->
-				<section class="section [섹션]-sec module-*">
-					<div class="sec-header"></div>
-					<div class="sec-body">
-						<!-- 컨텐츠 모듈 -->
-						<div class="[분류]-[성격] module-*">
-							<!-- 컴포넌트 모듈 -->
-							<button type="button" class="btn module-*">버튼</button>
-							<!-- //컴포넌트 모듈 -->
+				<section class="section module-a srch-sec">
+					<div class="srch-tbl">
+						<table>
+							<tbody>
+								<tr>
+									<th>상담일</th>
+									<td colspan="3">
+										<div class="frm-input module-a">
+											<input type="text" class="input" />
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>상담 방식</th>
+									<td>
+										<div class="frm-input module-a">
+											<select name="" id="" class="select">
+												<option value="">전체</option>
+											</select>
+										</div>
+									</td>
+									<th>상담 상태</th>
+									<td>
+										<div class="frm-input module-a">
+											<select name="" id="" class="select">
+												<option value="">전체</option>
+											</select>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>선택 입력</th>
+									<td colspan="3">
+										<div class="frm-input-group">
+											<div class="frm-input module-a">
+												<select name="" id="" class="select">
+													<option value="">전체</option>
+												</select>
+											</div>
+											<div class="frm-input module-a">
+												<input type="text" class="input" />
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="srch-btns">
+						<button type="button" class="btn module-a fill-normal">
+							<span>초기화</span>
+						</button>
+						<button type="button" class="btn module-a fill-primary">
+							<span>검색</span>
+						</button>
+					</div>
+				</section>
+				<!-- //섹션 모듈 -->
+
+				<!-- 섹션 모듈 -->
+				<section class="section module-a list-sec">
+					<div class="list-toolbar">
+						<div class="left-area">
+							<div class="total">
+								Total <em class="count">123</em>
+							</div>
 						</div>
-						<!-- //컨텐츠 모듈 -->
+						<div class="right-area">
+							<button type="button" class="btn module-d line-normal">
+								<span>Excel Download</span>
+							</button>
+							<div class="frm-input module-a">
+								<select name="" id="" class="select">
+									<option value="">10</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="list-tbl">
+						<table>
+							<thead>
+								<tr>
+									<th>상담ID</th>
+									<th>상담 일시</th>
+									<th>상담 방식</th>
+									<th>기능</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>123456</td>
+									<td>2025.10.25 14:00</td>
+									<td>실시간</td>
+									<td>
+										<div class="btn-group">
+											<button type="button" class="btn module-c line-primary">
+												<span>상세보기</span>
+											</button>
+											<button type="button" class="btn module-c line-normal">
+												<span>견적내기</span>
+											</button>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="pagination">
+
 					</div>
 				</section>
 				<!-- //섹션 모듈 -->
@@ -43,8 +154,6 @@
 			<!-- //page-content -->
 		</main>
 		<!-- //page-body -->
-
-		<footer class="page-footer"></footer>
 	</div>
 	<!-- //page -->
 </body>
